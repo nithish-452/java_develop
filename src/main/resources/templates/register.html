@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register Page</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .register-container {
+            background: white;
+            width: 400px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 25px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            background: #218838;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: #007bff;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="register-container">
+
+    <h2>User Registration</h2>
+
+    <form action="/register" method="post">
+
+        <label>Full Name</label>
+        <input type="text" name="fullname" placeholder="Enter Full Name" required>
+
+        <label>Email</label>
+        <input type="email" name="email" placeholder="Enter Email" required>
+
+        <label>Username</label>
+        <input type="text" name="username" placeholder="Choose Username" required>
+
+        <label>Password</label>
+        <input type="password" name="password" placeholder="Enter Password" required>
+
+        <label>Confirm Password</label>
+        <input type="password" name="confirmPassword" placeholder="Confirm Password" required>
+
+        <button type="submit" class="btn">Register</button>
+
+    </form>
+
+    <div class="footer">
+        <p>Already have an account? <a href="/">Login Here</a></p>
+    </div>
+
+</div>
+
+</body>
+</html>
