@@ -8,7 +8,6 @@ public class TrendApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(TrendApplication.class, args);
-		System.out.println("hello");
 	}
 
 }
